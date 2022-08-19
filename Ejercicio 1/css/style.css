@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Inlanders Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Inlanders\ Demo.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: #194E48;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header, .footer {
+    background-color: #3ef75a71;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 75px;
+}
+
+.section {
+    grid-area: content;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.aside-card {
+    border-radius: 25px;
+    background-color: #5dc66949;
+}
+
+.aside-card .card-img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.container {
+    display: grid;
+    padding: 50px 150px;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "content aside";
+    gap: 50px;
+    grid-column-start: content;
+    grid-column-end: aside;
+}
+
+.list-no-design {
+    list-style-type: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-item a {
+    color: var(--white);
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Inlanders Bold';
+}
+
+p {
+    font-size: 20px;
+}
+
+.paragraphs-container {
+    background-color: #2a853357;
+    padding: 50px 40px;
+    text-align: justify;
+    border-radius: 15px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.box-shadow {
+    box-shadow: 10px 9px 20px -6px #000000;
+}
+
+.text-shadow {
+    text-shadow: 6px 5px 5px #1E460B;
+}
+
+.over-card {
+    font-size: 32px;
+    position: absolute;
+    top: -20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table {
+    border-spacing: 15px;
+}
+
+.table td {
+    vertical-align: super;
+}
+
+.cards-container {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: #5dc66949;
+    border-radius: 15px;
+}
+
+.card .card-img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card h3 {
+    margin-bottom: 10px;
+}
+.card-info {
+    font-size: 15px;
+}
+.episodes-container{
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+.episodes-container img{
+    width: 100%;
+    height: 90px;
+    border-radius: 15px;
+}
